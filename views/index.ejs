@@ -1,1 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th> ID </th> <th> Name </th>  <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <% i=1; users.forEach(function(users){ %>
+    <tr>
+        <td> <%= i++ %> </td> <td> <%= users.name %> </td> <td> <%= users.number %> </td> <td> <a href="update/<%= users.id %>">Update</a> </td>
+    </tr>
+    <% }); %>
+
+  </tbody>
+</table>
+<br>
+<br>
 <a href="/create">Create!</a>

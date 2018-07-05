@@ -12,8 +12,9 @@ app.get('/create', function (req, res){controller.create(req,res)});
 
 app.post('/created', function (req, res) {controller.created(req,res)});
 
+app.get('/update/:id', function (req, res) {controller.update(req,res)});
 
-
+app.post('/updated', function(req,res) {controller.updated(req,res)});
 
 
 
