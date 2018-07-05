@@ -14,7 +14,9 @@ app.post('/created', function (req, res) {controller.created(req,res)});
 
 app.get('/update/:id', function (req, res) {controller.update(req,res)});
 
-app.post('/updated', function(req,res) {controller.updated(req,res)});
+app.post('/updated/:id', function(req,res) {controller.updated(req,res)});
+
+app.get('/delete/:id', function(req,res) {controller.delete(req,res)});
 
 
 

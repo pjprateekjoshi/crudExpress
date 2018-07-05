@@ -47,14 +47,14 @@ module.exports = {
 
     update: (req,res) => {
       var id = req.params.id;
-      User.find({}, function(err,users){
+      User.findById(id, function(err,users){
         if(err){
           console.log("Oh no Error!");
           console.log(err);
         }else {
           res.render("update.ejs", {users:users});
         }
-      })
+      });
      //  User.findById(id, function (err, tank) {
      //    if (err) return handleError(err);
      //
@@ -67,6 +67,11 @@ module.exports = {
     },
 
     updated: (req,res) => {
-              res.render('index.ejs');
+              res.render('updated.ejs');
+    },
+
+    delete: (req,res) => {
+        var id = req.params.id;
+
     }
 }
