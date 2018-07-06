@@ -15,7 +15,7 @@ app.get('/update/:id', function (req, res) {controller.update(req,res)});
 
 app.post('/updated/:id', function(req,res) {controller.updated(req,res)});
 
-app.get('/delete/:id', function(req,res) {controller.delete(req,res)});
+app.get('/deleteResource/:id', function(req,res) {controller.delete(req,res)});
 
 
-app.listen(8000, function(){console.log('App listening on port 8000')});
+app.listen(8000, () => console.log('App listening on port 8000'));
