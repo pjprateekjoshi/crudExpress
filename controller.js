@@ -28,7 +28,6 @@ const created = (req, res) => {
     name: req.body.name,
     number: req.body.number
   });
-
   newUser.save(function (err, cat) {
     if (err) {
       console.log("Error!!");
@@ -38,7 +37,7 @@ const created = (req, res) => {
       res.render('created.ejs', { newUser: newUser });
     }
   });
-},
+};
 
 const update = (req, res) => {
   var id = req.params.id;
@@ -66,7 +65,7 @@ const deleteResource = (req, res) => {
     if (err) return res.status(500).send(err);
     res.render('deleted.ejs');
   });
-}
+};
 
 module.exports = {
   index,
