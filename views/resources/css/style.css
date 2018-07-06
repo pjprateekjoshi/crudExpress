@@ -1,0 +1,10 @@
+.border{
+  border-collapse: collapse;
+}
+th, td, table{
+  border: solid 1px black;
+  padding: 5px;
+}
+button{
+  margin: 0 0 0 20em;
+}
