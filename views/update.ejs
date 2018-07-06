@@ -1,5 +1,6 @@
-<form action="/updated/<%= users.id %>" method="post">
-      <input type="text" name="name" value="<%= users.name %>">
-      <input type="text" name="number" value="<%= users.number %>">
+<h1>Update:</h1>
+<form action="/updated/<%= userToUpdate.id %>" method="post">
+      <input type="text" name="name" value="<%= userToUpdate.name %>">
+      <input type="text" name="number" value="<%= userToUpdate.number %>">
       <input type="submit" name="submit">
 </form>
