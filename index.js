@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:true}));
 var controller = require("./controller.js");
-
+var port = process.env.PORT || 8000;
 
 app.get("/", function (req, res) {controller.index(req,res);});
 
@@ -18,4 +18,4 @@ app.post("/updated/:id", function(req,res) {controller.updated(req,res);});
 app.get("/delete/:id", function(req,res) {controller.deleteResource(req,res);});
 
 
-app.listen(8000, () => console.log("App listening on port 8000\n"));
+app.listen(port, () => console.log(`App listening on port ${port}\n`));

@@ -1,5 +1,3 @@
-var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/newdb");
 var {User} = require("./app/User.js");
 
 
