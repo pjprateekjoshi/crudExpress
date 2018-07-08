@@ -1,11 +1,6 @@
 var mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/newdb");
-// var User = "./app/User.js";
-var userSchema = new mongoose.Schema({
-  name: String,
-  number: String
-});
-var User = mongoose.model("User", userSchema);
+var {User} = require("./app/User.js");
 
 
 const index = (req, res) => {

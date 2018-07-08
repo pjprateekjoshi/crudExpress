@@ -18,4 +18,4 @@ app.post("/updated/:id", function(req,res) {controller.updated(req,res);});
 app.get("/delete/:id", function(req,res) {controller.deleteResource(req,res);});
 
 
-app.listen(8000, () => console.log("App listening on port 8000"));
+app.listen(8000, () => console.log("App listening on port 8000\n"));
