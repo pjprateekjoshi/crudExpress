@@ -1,6 +1,5 @@
 var {User} = require("./app/User.js");
 
-
 const index = (req, res) => {
   User.find({}, function (err, users) {
     if (err) {
