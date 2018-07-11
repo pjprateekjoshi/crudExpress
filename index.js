@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:true}));
 var controller = require("./controller.js");
 var port = process.env.PORT || 8000;
+app.use(express.static('views/resources/css/'));
 
 app.get("/", function (req, res) {controller.index(req,res);});
 
