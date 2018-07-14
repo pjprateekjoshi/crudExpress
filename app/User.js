@@ -1,5 +1,5 @@
 var mongoose = require ("mongoose");
-mongoose.connect("mongodb://pjprateekjoshi:password0@ds131711.mlab.com:31711/newdb");
+mongoose.connect("mongodb://localhost/authExpress-test");
 
 var userSchema = new mongoose.Schema({
   name: String,
